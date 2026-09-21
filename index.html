@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="theme-color" content="#7EC8F0">
+<meta name="description" content="Atrapá la mayor cantidad de flores amarillas en 30 segundos.">
+<title>Atrapa las Flores</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:ital,wght@0,600;0,800;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ============================ PANTALLA: LOADING ======================= -->
+  <section class="screen is-active" id="screen-loading">
+    <div class="field" id="loading-field" aria-hidden="true"></div>
+    <p class="loading-text">Preparando las flores<span class="dots"><i>.</i><i>.</i><i>.</i></span></p>
+  </section>
+
+  <!-- ============================ PANTALLA: MENÚ ========================= -->
+  <section class="screen" id="screen-menu">
+    <div class="panel">
+      <h1 class="title">Atrapa<br><span>las Flores</span></h1>
+      <p class="tagline">¿Cuántas flores podés atrapar?</p>
+      <button class="btn" id="btn-play" type="button">Jugar</button>
+      <p class="hint" id="menu-hint">Movete con ← → o A / D</p>
+    </div>
+  </section>
+
+  <!-- ============================ PANTALLA: JUEGO ======================== -->
+  <section class="screen" id="screen-game">
+    <canvas id="canvas"></canvas>
+
+    <div class="hud">
+      <div class="hud-item" id="hud-score">🌼 Flores: <b>0</b></div>
+      <div class="hud-item" id="hud-lives" aria-label="Vidas restantes"></div>
+      <div class="hud-item" id="hud-time">⏱ <b>30</b></div>
+    </div>
+
+    <div class="countdown" id="countdown" aria-hidden="true"></div>
+
+    <!-- Controles táctiles: se muestran solo en dispositivos con pantalla táctil -->
+    <div class="touch-controls" id="touch-controls">
+      <button class="touch-btn" id="btn-left"  type="button" aria-label="Mover a la izquierda"></button>
+      <button class="touch-btn" id="btn-right" type="button" aria-label="Mover a la derecha"></button>
+    </div>
+  </section>
+
+  <!-- ============================ PANTALLA: RESULTADO ==================== -->
+  <section class="screen" id="screen-result">
+    <div class="panel result-panel">
+      <h2 class="result-title" id="result-title">¡Tiempo terminado!</h2>
+
+      <p class="result-label">Atrapaste</p>
+      <p class="result-count" id="result-count">0</p>
+      <p class="result-label">flores</p>
+
+      <div class="cast">
+        <figure class="cast-player">
+          <img id="result-bouquet" alt="" class="bouquet">
+          <img id="result-player" alt="Tu personaje con el ramo" class="hero">
+        </figure>
+        <figure class="cast-girl">
+          <img id="result-girl" alt="Chica feliz recibiendo las flores" class="girl">
+        </figure>
+      </div>
+
+      <p class="result-message" id="result-message"></p>
+      <button class="btn" id="btn-replay" type="button">Jugar de nuevo</button>
+    </div>
+  </section>
+
+</div>
+
+<script src="game.js"></script>
+</body>
+</html>
