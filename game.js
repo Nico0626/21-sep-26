@@ -77,13 +77,13 @@ const CONFIG = {
   // Rangos del resultado. Editá los mínimos, el ramo, la chica y el mensaje.
   RESULT_TIERS: [
     { min: 0,  bouquet: 'bouquetSmall',  girl: 'girlSmall',  label: 'pequeño',
-      message: '¡Cada flor cuenta! 🌼' },
+      message: '¡Wooow que ramo mas grande!!(sarcasmo) 🌼' },
     { min: 10, bouquet: 'bouquetMedium', girl: 'girlMedium', label: 'mediano',
-      message: '¡Muy lindo ramo! 💛' },
+      message: '¡Re inutil! Pero grachias! 💛' },
     { min: 20, bouquet: 'bouquetBig',    girl: 'girlBig',    label: 'grande',
-      message: '¡Qué cantidad de flores! 🌼🌼🌼' },
+      message: '¡Me encantaaaa! 🌼🌼🌼' },
     { min: 30, bouquet: 'bouquetHuge',   girl: 'girlHuge',   label: 'enorme',
-      message: '¡Un ramo enorme! 💐✨' }
+      message: '¡Y yo que hago con tantas flores! te amu<3 💐✨' }
   ],
 
   // El ramo además crece de forma continua según la puntuación
