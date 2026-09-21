@@ -58,11 +58,11 @@ const CONFIG = {
 
   // Dificultad: se interpola de "start" a "end" a lo largo de la partida
   difficulty: {
-    spawnIntervalStart: 0.70,   // segundos entre objetos al empezar
-    spawnIntervalEnd:   0.32,   // ...y al terminar
+    spawnIntervalStart: 0.50,   // segundos entre objetos al empezar
+    spawnIntervalEnd:   0.25,   // ...y al terminar
     speedMultStart: 1.0,
     speedMultEnd:   1.55,
-    obstacleChanceStart: 0.12,  // probabilidad de que el objeto sea obstáculo
+    obstacleChanceStart: 0.16,  // probabilidad de que el objeto sea obstáculo
     obstacleChanceEnd:   0.34,
     doubleSpawnChance: 0.18     // a veces caen dos a la vez (en la 2ª mitad)
   },
