@@ -78,11 +78,11 @@ const CONFIG = {
   RESULT_TIERS: [
     { min: 0,  bouquet: 'bouquetSmall',  girl: 'girlSmall',  label: 'pequeño',
       message: '¡Wooow que ramo mas grande!!(sarcasmo) 🌼' },
-    { min: 10, bouquet: 'bouquetMedium', girl: 'girlMedium', label: 'mediano',
+    { min: 25, bouquet: 'bouquetMedium', girl: 'girlMedium', label: 'mediano',
       message: '¡Re inutil! Pero grachias! 💛' },
-    { min: 20, bouquet: 'bouquetBig',    girl: 'girlBig',    label: 'grande',
+    { min: 35, bouquet: 'bouquetBig',    girl: 'girlBig',    label: 'grande',
       message: '¡Me encantaaaa! 🌼🌼🌼' },
-    { min: 30, bouquet: 'bouquetHuge',   girl: 'girlHuge',   label: 'enorme',
+    { min: 50, bouquet: 'bouquetHuge',   girl: 'girlHuge',   label: 'enorme',
       message: '¡Y yo que hago con tantas flores! te amu<3 💐✨' }
   ],
 
