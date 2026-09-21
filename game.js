@@ -62,8 +62,8 @@ const CONFIG = {
     spawnIntervalEnd:   0.25,   // ...y al terminar
     speedMultStart: 1.0,
     speedMultEnd:   1.55,
-    obstacleChanceStart: 0.16,  // probabilidad de que el objeto sea obstáculo
-    obstacleChanceEnd:   0.34,
+    obstacleChanceStart: 0.18,  // probabilidad de que el objeto sea obstáculo
+    obstacleChanceEnd:   0.45,
     doubleSpawnChance: 0.18     // a veces caen dos a la vez (en la 2ª mitad)
   },
 
